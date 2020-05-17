@@ -1,0 +1,13 @@
+@import "../../../sass/mixin.scss";
+
+.gameList {
+    @include listContainer;
+    @include scrollbar(#f8f9fa);
+    &:hover {
+        @include scrollbarThumb(#000000a9, black)
+    }
+    h2 {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}

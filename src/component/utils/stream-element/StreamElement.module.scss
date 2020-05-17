@@ -1,0 +1,33 @@
+@import "../../../sass/variable.scss";
+@import "../../../sass/mixin.scss";
+
+.card {
+  @include cardContainer;
+    .link {
+        text-decoration: none;
+    }
+    .type{
+        position: absolute;
+        z-index: 100;
+        top: 5px;
+        right: 15px;
+    }
+    .thumbnail {
+        position: relative;
+        &:hover {
+            @include hoverTransition($color-live);
+        }
+    }
+    span, .title{
+        @include titleStyle(black)
+    }
+    .title{
+        max-width: 260px;
+        font-weight: bold;
+    }
+    .game {
+        &:hover{
+            color: $color;
+        }
+    }
+}

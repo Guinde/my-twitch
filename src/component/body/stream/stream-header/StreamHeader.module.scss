@@ -1,0 +1,23 @@
+@import '../../../../sass/variable.scss';
+
+.headerStream{
+    display: flex;
+    flex-direction: row;
+    .userName{
+        color: black;
+        text-decoration: none;
+        &:hover{
+            color: $color-live;
+        }
+    }
+    div{
+        display: flex;
+        span{
+            display: flex;
+            font-weight: bold;
+        }
+    }
+}
+.tabContainer{
+    margin-left: 15%;
+}

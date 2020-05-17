@@ -1,0 +1,13 @@
+@import "../../../sass/mixin.scss";
+@import "../../../sass/variable.scss";
+
+.liveStream {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    @include scrollbar(#f8f9fa);
+    &:hover {
+        @include scrollbarThumb(#000000a9, black)
+    }
+}
+

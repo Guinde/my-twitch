@@ -1,0 +1,25 @@
+@import "../../../sass/variable.scss";
+@import "../../../sass/mixin.scss";
+
+.card {
+    border-style: none;
+    width: 200px;
+    img {
+        cursor: pointer;
+        position: relative;
+        width: 200px;
+        &:hover {
+            @include hoverTransition($color);
+        }
+    }
+    .link {
+        text-decoration: none;
+        .gameName {
+            font-weight: bold;
+            color: $color;
+            &:hover {
+                color: $color-hover;
+            }
+        }
+    }
+}

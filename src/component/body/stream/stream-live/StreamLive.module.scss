@@ -1,0 +1,21 @@
+@import '../../../../sass/variable.scss';
+
+.infosContainer{
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+    .streamInfo {
+        display: flex;
+        flex-direction: row;
+    }
+    .containerGameName{
+        font-size: 1.2rem;
+        .gameName{
+            text-decoration: none;
+            color: $color;
+            &:hover{
+                color: $color-hover;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
+  }
+
+  @mixin scrollbar($bg-color) {
+    &::-webkit-scrollbar {
+      height: 8px;
+      width: 8px;
+      &::-webkit-scrollbar-track, &::-webkit-scrollbar-corner{
+        background-color: $bg-color;
+      }
+    }
+  }
+
+  @mixin scrollbarThumb($color, $color-hover) {
+      &::-webkit-scrollbar-thumb {
+        border-radius: 50px;
+        background-color: $color;
+        &:hover {
+          background-color: $color-hover;
+        }
+    }
+  }
+
+  @mixin hoverTransition($color) {
+    transition: all 0.2s ease-out;
+    box-shadow: -5px 5px $color;
+    top: -5px;
+    right: -5px;
+  }
+
+  @mixin listContainer() {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    overflow-y: scroll;
+  }
+  
+  @mixin cardContainer() {
+    border-style: none;
+    width: 330px;
+    position: relative;
+  }
+
+  @mixin titleStyle($color) {
+    color: $color;
+    &:hover {
+        text-decoration: none;
+        color: $color-live;
+    }
+  }

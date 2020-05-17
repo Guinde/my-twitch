@@ -12,7 +12,6 @@ const Header = ({history}) => {
     const initialValues = {search: '', category: 'game' }
 
     const submit = (values, actions) => {
-        console.log("values =>", values)
         const val = _.join(_.split(values.search, " "), "%20")
         inputSearch.current.value = '';
         if(actions){
